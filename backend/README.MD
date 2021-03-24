@@ -1,5 +1,5 @@
 # DJANGO API
-## Instalacion / Configuracion
+## Instalación / Configuración
 
 - Crear/Activar venv
 - Instalar dependencias de `requirements.txt`
@@ -15,11 +15,19 @@
 - `ALTER ROLE root SET timezone TO 'UTC';`
 - `GRANT ALL PRIVILEGES ON DATABASE django_project TO root;`
 
+Por defecto la API utiliza
+
+- Usuario: `root`
+- Contraseña: `root`
+- Base de datos: `django_project`
+- Puerto: `5432`
+
 ## Data Seed
 
 - `python manage.py seed`
 
-##Notas
+## Notas
 
-- Tiene configurado el panel administrador basico.
-- No se necesita autentificacion para utilizar la API.
+- Tiene configurado el panel administrador básico.
+- No se necesita loguearse para utilizar la API.
+- Nada esta configurado a través de variables de entorno
